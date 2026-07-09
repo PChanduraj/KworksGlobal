@@ -6,6 +6,10 @@ import ContactUs from "./components/ContactUs";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import NewServices from "./components/NewServices";
+import Resources from "./components/Resources";
+import Article from "./components/Article";
+import Stats from "./components/Stats";
+import Careers from "./components/Careers";
 import Terms from "./components/Terms";
 import { Helmet } from "react-helmet";
 
@@ -31,6 +35,10 @@ function App() {
               <Route path="/about-us" element={<AboutUs />} />
               <Route path="/contact-us" element={<ContactUs />} />
               <Route path="/services" element={<NewServices />} />
+              <Route path="/resources" element={<Resources />} />
+              <Route path="/resources/stats" element={<Stats />} />
+              <Route path="/resources/:slug" element={<Article />} />
+              <Route path="/careers" element={<Careers />} />
               <Route path="/termsNconditions" element={<Terms />} />
             </Routes>
             <Footer />

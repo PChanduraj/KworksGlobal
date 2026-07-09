@@ -36,6 +36,16 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>FinTeam</title>
+
+    <!-- Google Analytics 4 — REPLACE G-XXXXXXXXXX with your GA4 Measurement ID to activate.
+         Until then the snippet is inert. Article reads fire an `article_view` event (see src/utils/track.js). -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

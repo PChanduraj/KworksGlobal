@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Menu, Drawer, Button } from 'antd';
 import { useNavigate } from "react-router-dom";
 import { Link } from 'react-scroll';
-import w from '../image/wording.png'
+import Logo from '../image/finteam-one-logo.png'
 import './Navbar.css'
 import {
   MailOutlined,
@@ -10,7 +10,6 @@ import {
   SettingOutlined,
   MenuOutlined,
 } from '@ant-design/icons';
-import Logo from '../image/final.png'
 const { SubMenu } = Menu;
 
 
@@ -35,9 +34,7 @@ const Navbar = () => {
     
       <div className="nav"  >
          <div className='logo_img' onClick={()=>navigate('/')}>
-          <img src={w} alt='w' style={{    height: '4rem' ,width: '5rem' }}></img>
-          <img src={Logo} alt="Logo" style={{ width: '120px',marginBottom:'1rem' }} />
-        
+          <img src={Logo} alt="FinTeam One" style={{ height: '3rem', width: 'auto' }} />
         </div>
         <div className='nav_items' style={{overflow:'hidden'}}>
         <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" style={{ display: 'flex', justifyContent: 'flex-end',width:'100%',overflow:'hidden' }}>
@@ -49,6 +46,12 @@ const Navbar = () => {
           </Menu.Item>
           <Menu.Item key="services"  onClick={()=>navigate('/services')}>
         SERVICES
+          </Menu.Item>
+          <Menu.Item key="resources"  onClick={()=>navigate('/resources')}>
+            RESOURCES
+          </Menu.Item>
+          <Menu.Item key="careers"  onClick={()=>navigate('/careers')}>
+            CAREERS
           </Menu.Item>
           <Menu.Item key="contactus"  onClick={()=>navigate('/contact-us')} >
             CONTACT US
@@ -75,6 +78,12 @@ const Navbar = () => {
           </Menu.Item>
           <Menu.Item key="services"  onClick={()=>navigate('/services')}>
             SERVICES
+          </Menu.Item>
+          <Menu.Item key="resources"  onClick={()=>navigate('/resources')}>
+            RESOURCES
+          </Menu.Item>
+          <Menu.Item key="careers"  onClick={()=>navigate('/careers')}>
+            CAREERS
           </Menu.Item>
           <Menu.Item key="contactus" onClick={()=>navigate('/contact-us')} >
             CONTACT US

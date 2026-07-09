@@ -1,0 +1,149 @@
+.article-hero {
+  position: relative;
+  background: linear-gradient(120deg, #134d65 0%, #1c6a8a 55%, #28aee4 100%);
+  overflow: hidden;
+  padding: 3.5rem 1.5rem 3rem;
+}
+
+.article-hero-icon {
+  position: absolute;
+  right: -2rem;
+  bottom: -3rem;
+  width: 16rem;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.article-hero-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.article-eyebrow {
+  display: inline-block;
+  color: #ffd24d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.article-hero-title {
+  color: #ffffff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.22;
+  margin: 0 0 1rem;
+}
+
+.article-hero-meta {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.article-hero .article-back--light {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.25rem;
+}
+
+.article-back--light:hover {
+  color: #ffffff;
+}
+
+.article-video {
+  margin-bottom: 2.5rem;
+}
+
+.article-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  box-sizing: border-box;
+}
+
+.article-back,
+.article-notfound span {
+  color: #28aee4;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.article-back:hover,
+.article-notfound span:hover {
+  color: #134d65;
+}
+
+.article-title {
+  color: #134d65;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+.article-meta {
+  color: #28aee4;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0 0 2.5rem;
+}
+
+.article-body h2 {
+  color: #134d65;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 2.5rem 0 1rem;
+}
+
+.article-body p {
+  color: #33454d;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0 0 1.35rem;
+}
+
+.article-cta {
+  margin-top: 3.5rem;
+  padding: 2rem;
+  background-color: #e6edf0c2;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.article-cta p {
+  color: #134d65;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1.25rem;
+}
+
+.article-cta-btn {
+  display: inline-block;
+  background-color: #28aee4;
+  color: white;
+  font-weight: 500;
+  padding: 0.6rem 1.75rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.article-cta-btn:hover {
+  background-color: #134d65;
+}
+
+.article-notfound {
+  color: #134d65;
+  font-size: 1.1rem;
+  text-align: center;
+}

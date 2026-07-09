@@ -3,12 +3,14 @@ import Services from './Services';
 import WhyUs from './WhyUs';
 import ProblemSolution from './ProblemSolution';
 import Banner from './Banner';
+import Resources from './Resources';
 import { Helmet } from 'react-helmet';
 const Home = () => {
   return (
-    <div> 
+    <div>
       <Banner/>
           <Services />
+          <Resources />
     </div>
   )
 }
