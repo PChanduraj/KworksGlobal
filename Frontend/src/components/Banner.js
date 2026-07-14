@@ -16,7 +16,7 @@ const Banner = () => {
                 animationIn="bounceInRight" >
           <p className='main-heading'>We work the numbers,<br/> so you can do<br/> Wonders! </p></AnimatedOnScroll>
           <AnimatedOnScroll
-                animationIn="bounceInLeft" >  <p className='sub-heading'>Unleash your companies potential with agility and expertise. Outsource. Outshine. <span> FinTeam </span> replaces your finance function with lean, data-driven excellence delivering world class financial management services.
+                animationIn="bounceInLeft" >  <p className='sub-heading'>Unleash your companies potential with agility and expertise. Outsource. Outshine. <span> FinTeam One </span> replaces your finance function with lean, data-driven excellence delivering world class financial management services.
           </p></AnimatedOnScroll>
           <AnimatedOnScroll
                 animationIn="bounceInLeft" >  <button onClick={()=>navigate('/contact-us')}>Contact Us</button></AnimatedOnScroll>

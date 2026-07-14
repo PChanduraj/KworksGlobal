@@ -2,6 +2,7 @@ import React from "react";
 import "animate.css";
 import { AnimatedOnScroll } from "react-animated-css-onscroll";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import articles from "../data/articles";
 import icon from "../image/finteam-icon.png";
 import "./Resources.css";
@@ -16,10 +17,23 @@ const Thumb = ({ label }) => (
   </div>
 );
 
-const Resources = () => {
+// `asPage` is true only on the /resources route — so the page <title> is set there
+// but NOT when Resources renders as a section on the Home page (which owns its own title).
+const Resources = ({ asPage }) => {
   const navigate = useNavigate();
   return (
     <div className="resources-container">
+      {asPage && (
+        <Helmet>
+          <title>Finteam One - Resources</title>
+          <meta
+            name="description"
+            content="Insights, guides, and tools from FinTeam One — free finance resources for growing businesses."
+          />
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="/resources" />
+        </Helmet>
+      )}
       <AnimatedOnScroll animationIn="bounceInRight" style={{ width: "100%" }}>
         <p className="resources-title">
           Resources to power your finance decisions
