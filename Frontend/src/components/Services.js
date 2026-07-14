@@ -57,7 +57,7 @@ const Services = () => {
         <title>Finteam - Home</title>
         <meta
           name="description"
-          content="FinTeam replaces your finance function with lean, data-driven excellence delivering world class financial management services."
+          content="FinTeam One replaces your finance function with lean, data-driven excellence delivering world class financial management services."
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.finteam.one" />
@@ -114,7 +114,7 @@ const Services = () => {
             {" "}
             <div className="conclusion-text">
               <p>
-                With FinTeam your dedicated accounting and Finance team
+                With FinTeam One your dedicated accounting and Finance team
                 in-charge, you're liberated.....
                 <span>
                   <br />

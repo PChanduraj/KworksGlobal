@@ -7,7 +7,7 @@ const ContactUs = () => {
     <>
      <Helmet>
         <title>Finteam - Contact</title>
-        <meta name="description" content="Talk to us to see what running a business is like with FinTeam on your side. Drop us email at : info@finTeam.one" />
+        <meta name="description" content="Talk to us to see what running a business is like with FinTeam One on your side. Drop us email at : info@finTeam.one" />
         <meta name="robots" content="contact" />
         <link rel="canonical" href="/contact-us" />
     </Helmet>
@@ -15,7 +15,7 @@ const ContactUs = () => {
       <div className='div1'>
         {/* <div className='icon'><img src={co}></img></div> */}
         <h1 className='hero-head'>Book a Free Consultation</h1>
-        <p className='hero-para'>Talk to us to see what running a business is like with FinTeam on your side.</p>
+        <p className='hero-para'>Talk to us to see what running a business is like with FinTeam One on your side.</p>
         <p className='drop'>Drop us email at :<b> info@finTeam.one</b></p>
       </div>
       <div className='div2'>

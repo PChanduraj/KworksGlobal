@@ -55,7 +55,7 @@ const AboutUs = () => {
            We are your dedicated Finance Team !
           </h1>
           <p className='para'>
-          Founded in September 2023, FinTeam's vision is to transform the financial landscape for businesses of all sizes and bring the future of managed financial services to small to medium-sized companies.
+          Founded in September 2023, FinTeam One's vision is to transform the financial landscape for businesses of all sizes and bring the future of managed financial services to small to medium-sized companies.
             Our mission is to empower businesses with the appropriate financial tools and expertise needed so they can perform wonders. We believe that by simplifying financial management, we enable our clients to focus on what they do best while we handle the numbers. Together, we're shaping a future where financial success is within reach for every business.
           </p>
           </AnimatedOnScroll>
