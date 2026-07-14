@@ -66,11 +66,27 @@
   border-top: 4px solid #28aee4;
 }
 
+.value-emoji {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+
 .value-card h4 {
   color: #134d65;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.15rem;
+}
+
+.value-tagline {
+  display: block;
+  color: #28aee4;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 0.6rem;
 }
 
 .value-card p {

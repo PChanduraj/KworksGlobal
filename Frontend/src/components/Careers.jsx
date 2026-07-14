@@ -26,13 +26,38 @@ const openings = [
   },
 ];
 
-// ponytail: PLACEHOLDER values — replace with FinTeam One's actual five core values.
+// FinTeam One's real core values — The 5P Way (from HR Corporate Culture doc).
 const values = [
-  { title: "Be Bold", desc: "We challenge the status quo and disrupt how finance is done." },
-  { title: "Future-First", desc: "We build for where finance is going, not where it has been." },
-  { title: "AI in Everything", desc: "We leverage cutting-edge AI in every part of what we do." },
-  { title: "Global by Design", desc: "One team, many locations, serving clients worldwide." },
-  { title: "Own the Outcome", desc: "We take end-to-end ownership of the results we deliver." },
+  {
+    emoji: "🔥",
+    title: "Passion",
+    tagline: "Problems Are Possibilities",
+    desc: 'We see every challenge as a chance to innovate. Where others say "no," we find 100 ways to yes.',
+  },
+  {
+    emoji: "👥",
+    title: "People",
+    tagline: "Powered by Growth",
+    desc: "We adapt faster than change itself. Learning isn't a goal — it's how we operate every single day.",
+  },
+  {
+    emoji: "🚀",
+    title: "Performance",
+    tagline: "Peace-of-Mind Numbers",
+    desc: "We deliver clarity you can trust. Our clients sleep better, dream bigger, and make confident decisions.",
+  },
+  {
+    emoji: "🤝",
+    title: "Partnership",
+    tagline: "Pressure Reveals Precision",
+    desc: "When stakes are high, we stay composed. Collaboration and creative problem-solving turn obstacles into outcomes.",
+  },
+  {
+    emoji: "🌟",
+    title: "Possibilities",
+    tagline: "Playing for Unicorns",
+    desc: "We're not here for incremental wins. We're building big, backing the underdog, and rewriting what's possible for SMBs.",
+  },
 ];
 
 const Careers = () => {
@@ -97,16 +122,18 @@ const Careers = () => {
         {/* Core values */}
         <AnimatedOnScroll animationIn="bounceInRight" style={{ width: "100%" }}>
           <p className="resources-title">
-            What we value
+            The 5P Way
             <br />
-            <span>The principles behind how we work and who we hire.</span>
+            <span>The values behind how we work, who we hire, and how we serve.</span>
           </p>
         </AnimatedOnScroll>
         <div className="careers-values">
           {values.map((v) => (
             <AnimatedOnScroll animationIn="bounceInUp" key={v.title}>
               <div className="value-card">
+                <span className="value-emoji" aria-hidden="true">{v.emoji}</span>
                 <h4>{v.title}</h4>
+                <span className="value-tagline">{v.tagline}</span>
                 <p>{v.desc}</p>
               </div>
             </AnimatedOnScroll>
