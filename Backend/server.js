@@ -46,6 +46,35 @@ app.get('/api/track/stats', (req, res) => {
   res.json({ ranked, totals });
 });
 
+// --- Career applications ---
+// ponytail: JSON file store — fine for hiring volume. Swap for a DB if it grows.
+const APPS_FILE = path.join(__dirname, 'data', 'applications.json');
+
+app.post('/api/careers/apply', (req, res) => {
+  const { name, email, phone, role, linkedin, message } = req.body || {};
+  if (!name || !email || !role) {
+    return res.status(400).json({ error: 'name, email, and role are required' });
+  }
+  let apps = [];
+  try { apps = JSON.parse(fs.readFileSync(APPS_FILE, 'utf8')); } catch (e) {}
+  apps.push({
+    name, email, phone: phone || null, role,
+    linkedin: linkedin || null, message: message || null,
+    ts: new Date().toISOString(),
+  });
+  fs.mkdirSync(path.dirname(APPS_FILE), { recursive: true });
+  fs.writeFileSync(APPS_FILE, JSON.stringify(apps, null, 2));
+  res.status(201).json({ ok: true });
+});
+
+app.get('/api/careers/applications', (req, res) => {
+  try {
+    res.json(JSON.parse(fs.readFileSync(APPS_FILE, 'utf8')));
+  } catch (e) {
+    res.json([]);
+  }
+});
+
 app.post('/api/send-email', (req, res) => {
   const { name, email, message } = req.body;
 

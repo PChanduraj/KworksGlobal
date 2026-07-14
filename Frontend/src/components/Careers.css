@@ -1,0 +1,185 @@
+.careers-hero {
+  position: relative;
+  background: linear-gradient(120deg, #134d65 0%, #1c6a8a 55%, #28aee4 100%);
+  overflow: hidden;
+  padding: 4rem 1.5rem;
+}
+
+.careers-hero-icon {
+  position: absolute;
+  right: -2rem;
+  bottom: -3rem;
+  width: 18rem;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.careers-hero-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.careers-eyebrow {
+  display: inline-block;
+  color: #ffd24d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.careers-hero-inner h1 {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+
+.careers-hero-inner p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0;
+}
+
+/* Core values */
+.careers-values {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 1rem;
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 3px 3px 3px 3px rgb(207, 207, 207);
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 4px solid #28aee4;
+}
+
+.value-card h4 {
+  color: #134d65;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.value-card p {
+  color: #4a5a63;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.careers-roles-title {
+  margin-top: 3.5rem;
+}
+
+/* Application form */
+.apply-block {
+  max-width: 640px;
+  margin: 3.5rem auto 0;
+  background: #e6edf0c2;
+  border-radius: 0.9rem;
+  padding: 2.25rem;
+  box-sizing: border-box;
+}
+
+.apply-block h3 {
+  color: #134d65;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+.apply-intro {
+  color: #4a5a63;
+  margin: 0 0 1.5rem;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.apply-form input,
+.apply-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cdd8de;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+}
+
+.apply-form input:focus,
+.apply-form textarea:focus {
+  outline: none;
+  border-color: #28aee4;
+}
+
+.apply-form button {
+  align-self: flex-start;
+  background: #28aee4;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.apply-form button:hover {
+  background: #134d65;
+}
+
+.apply-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.apply-error {
+  color: #b3261e;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.apply-done h3 {
+  margin-bottom: 0.75rem;
+}
+
+.apply-done p {
+  color: #33454d;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .careers-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .careers-values {
+    grid-template-columns: 1fr;
+  }
+  .careers-hero-inner h1 {
+    font-size: 2rem;
+  }
+}

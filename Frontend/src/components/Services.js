@@ -98,9 +98,6 @@ const Services = () => {
         <p className="logo-des-a">
           Free yourself to prioritize business growth.
         </p>
-        <Question />
-
-        <NewServices />
         <Testimonials />
         <div className="conclusion">
           <AnimatedOnScroll animationIn="bounceInRight">
