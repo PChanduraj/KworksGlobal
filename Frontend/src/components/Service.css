@@ -1,3 +1,43 @@
+.services-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.services-intro-eyebrow {
+  display: inline-block;
+  color: #28aee4;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.services-intro h1 {
+  color: #134d65;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.services-intro p {
+  color: #4a5a63;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.services-intro-hint {
+  margin-top: 1.25rem !important;
+  color: #28aee4 !important;
+  font-weight: 600;
+  font-size: 0.95rem !important;
+}
+
 .service-container{
     display: flex;
     flex-direction: column;
