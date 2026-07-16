@@ -45,11 +45,81 @@
   color: #ffffff;
 }
 
+.network-canvas{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
 .main-heading{
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
-  text-wrap: nowrap;
   color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.85rem;
+}
+
+/* Each word sits in a mask so it can slide up from nothing.
+   NOTE: a global `* { color; overflow-x: hidden }` reset lives in index.css —
+   it matches these spans directly, which kills colour inheritance and turns
+   overflow-y into `auto` (phantom scrollbars). Both are re-asserted here. */
+.word-mask{
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  color: inherit;
+}
+.word{
+  display: inline-block;
+  will-change: transform;
+  color: inherit;
+  overflow: visible;
+}
+.rotator{
+  position: relative;
+}
+.rotating-word{
+  color: #ffd24d;
+}
+
+/* Scroll cue */
+.scroll-cue{
+  position: absolute;
+  bottom: 4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 42px;
+  border: 2px solid rgba(255,255,255,0.55);
+  border-radius: 2rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+  box-sizing: border-box;
+}
+.scroll-cue span{
+  width: 4px;
+  height: 8px;
+  border-radius: 2px;
+  background: #ffd24d;
+  animation: scroll-bob 1.6s ease-in-out infinite;
+}
+@keyframes scroll-bob{
+  0%   { transform: translateY(0);    opacity: 1; }
+  70%  { transform: translateY(14px); opacity: 0; }
+  100% { transform: translateY(0);    opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .scroll-cue span{ animation: none; }
 }
 .sub-heading{
   font-size: 1.4rem;
